@@ -1,5 +1,5 @@
 #include "Engine.h"
-Engine::Engine() : light(Vector2f(480, 540), 5, Color::Yellow), occ(Vector2f(1440, 540), 100, Color::Blue), rays(light, occ,1)
+Engine::Engine() : light(Vector2f(480, 540), 5, Color::Yellow), occ(Vector2f(1440, 540), 100, Color::Blue), rays(light, occ,360)
 {
 	int pixelWidth = VideoMode::getDesktopMode().width;
 	int pixelHeight = VideoMode::getDesktopMode().height;
